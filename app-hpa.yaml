@@ -10,4 +10,4 @@ spec:
     name: myapp
   minReplicas: 2
   maxReplicas: 10
-  targetCPUUtilization Percentage: 50 #50% of request cpu
+  targetCPUUtilizationPercentage: 50 #50% of request cpu
