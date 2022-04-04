@@ -27,6 +27,11 @@ spec:
         - name:  secret-conn
           secret:
             secretName: mysecret
+      resources:
+        requests:
+          cpu: 500m
+        limits:
+          cpu: 1000m
 ---
 apiVersion: v1
 kind: Service
