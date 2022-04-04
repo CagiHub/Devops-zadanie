@@ -18,21 +18,20 @@ spec:
       containers:
       - name: myapp
         image: nginx:1.14.2 #image of app
+        resources:
+          requests:
+            cpu: 500m
+          limits:
+            cpu: 1000m
         ports:
         - containerPort: 80
         volumeMounts: #volume mounted to container
           - name: secret-conn
             mountPath: /etc/secret
-
       volumes:  #volume mounted to pod
         - name:  secret-conn
           secret:
             secretName: mysecret
-      resources:
-        requests:
-          cpu: 500m
-        limits:
-          cpu: 1000m
 ---
 apiVersion: v1
 kind: Service
@@ -47,4 +46,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 9376
-      NodePort: 30000
+      nodePort: 30000
