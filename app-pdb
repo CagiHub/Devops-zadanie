@@ -5,5 +5,5 @@ metadata:
 spec:
   minAvailable: 1 #only one can be drained
   selector: 
-    matchlabels:
+    matchLabels:
       app: myapp
