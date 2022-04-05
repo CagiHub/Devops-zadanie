@@ -1,7 +1,7 @@
 # Devops-zadanie
 
 
-Zo zadaní som si vybral option 2:
+So zadaní som si vybral option 2:
 ## Option 2
 ### The Task
 #### Your task is to create a repo in github and solve below problem
@@ -46,7 +46,7 @@ $ kubens ns1
 
 ---
 
-Deploy všetkych resource files do minikube cluster
+Deploy všetkých resource files do minikube cluster
 ```
 $ kubectl apply -f secret.yaml
 $ kubectl apply -f app-hpa.yaml
@@ -62,7 +62,7 @@ Kontrola či sa dobre vytvorili všetky komponenty v clusteri
 $ Kubectl get all
 ```
 
-Zistenie minikube ip adresy a nasledne pozretie appky na localhoste (minikubeIP:NodePort)
+Zistenie minikube ip adresy a následné pozretie appky na localhoste (minikubeIP:NodePort)
 ```
 $ minikube ip
 ```
